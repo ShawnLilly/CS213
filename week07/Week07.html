@@ -1,0 +1,206 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css"> 
+    <title>Products</title>
+    <script type="text/javascript" src="Week07.js"></script>
+    <style type="text/css">
+	  #form, pre {
+		  margin-left:20px; 
+		  font-family:Verdana, Geneva, sans-serif; 
+          padding:6px;
+          width: 550px;
+          font-size: 12;
+	      border: 3px solid rgb(0, 90, 136); 
+          border-radius: 4px;
+	  }
+	  h2 {
+		  border-bottom-style: solid;
+	  }
+    div.product {
+      background-color: rgba(136, 176, 239,.3);
+    font-size: 18px;
+    border: 3px solid black;
+    width: 850px;     
+    color: gold;
+    display:table; margin:0 auto;    
+    }
+    h3 {
+      color: white;
+    }
+    .finalAction {
+      display: inline-block;
+    }
+    #Form {
+      border: 3px solid rgb(0, 90, 136);
+    }
+	</style>
+  </head>
+  
+<body>
+      <ul class="nav">
+        <li><a href="index07.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Week07.html">Shopping and Cart</a></li>
+        <li><a href="../index.html">Return to CS</a></li>
+      </ul>
+  <div class="first">
+  <p>Due to high demand we are low on our variety of products, please come back in 
+    a week or so and everything should be in stock.
+    <br> Sorry for the inconvenience.</p>
+  </div>
+
+
+
+  <div class="product">
+  <table>
+    <tr>
+      <td><img src="Ecar.jpg" alt="Bolt" width="350" height="170"></td>
+  <td><h3>Bolt</h3><p><br>Cost: $45,000 <br> Description <br> High end electric car, up to 500 miles per charge. Maximum time between charges before battery only drops 10% every 30 days. Self-driving, ecofriendly.</p></td>
+    </tr>
+  </table>
+  </div>
+
+  <div class="product">
+    <table>
+    <tr>
+      <td> <img src="Nb.jpg" alt="P23 Ingection nanobots" width="350" height="170"></td>
+  <td><h3>P23 Injection nanobots</h3><p><br>Cost: $3,000 <br> Description <br> Injectable nanobots that will repair your body. One injection every ten years for best results. Fixes aches and pains, scars, tissue damage, removal of cancer cells, and so much more.</p></td>
+    </tr>
+    </table>
+  </div>
+  <div class="product">
+    <table>
+    <tr> 
+  <td><img src="Sp.jpg" alt="High power solarpannels" width="350" height="170"></td>
+  <td><h3>High power solar panels</h3><p><br>Cost: $22,000 <br> Description <br>High energy output solar panels. One solar panel puts out enough energy to power the average size home. Great for the environment, and your electric bill.</p></td>
+    </tr>
+    </table>
+  </div>
+  <p>Fill out the form below to buy your items.</p>
+  <div id="form">
+       <p></p>
+
+        <!-- picking items to buy -->
+   <form Name="calculateItems">
+    <select NAME="saleItem1" onChange="calcPrice()" id="saleItem1">
+       <option value="0">Select One Choice from the List</option>
+       <option value="40000">Bolt add $40000</option>
+       <option value="3000">P23 Ingection nanobots add $3000</option>
+       <option value="20000">High power solarpannels add $20000</option>
+    </select>
+
+    <select NAME="saleItem2" onChange="calcPrice()" id="saleItem2">
+        <option value="0">Select One Choice from the List</option>
+       <option value="40000">Bolt add $40000</option>
+       <option value="3000">P23 Ingection nanobots add $3000</option>
+       <option value="20000">High power solarpannels add $20000</option>
+    </select>
+
+    <select NAME="saleItem3" onChange="calcPrice()" id="saleItem3">
+       <option value="0">Select One Choice from the List</option>
+       <option value="40000">Bolt add $40000</option>
+       <option value="3000">P23 Ingection nanobots add $3000</option>
+       <option value="20000">High power solarpannels add $20000</option>
+    </select>
+  </form>
+<p></p>
+<button type="button" onclick="calcPrice()">Calculate</button>
+The new calculated price:<INPUT type="text" id="PicExtPrice" Size=8>
+      
+       <!-- Name -->
+    <p>Please indicate your first Name</p>
+    <form action="" id="form7">
+    <div>
+            <input onInput="validateName(this.value,'name1');" size="4"/>
+            <span class='name1' style='color:red'>Blank</span>
+      </div>
+    </form>
+
+      <!-- Name -->
+    <p>Please indicate your Last Name</p>
+    <form action="" id="form8">
+    <div>
+            <input onInput="validateName(this.value,'name2');" size="4"/>
+            <span class='name2' style='color:red'>Blank</span>
+      </div>
+    </form>
+
+      <!-- Address -->
+    <p>Please enter your Address</p>
+    <form action="" id="form9">
+      <div>
+              <input onInput="validateName(this.value,'addr1');" size="15"  />
+              <span class='addr1' style="color:red">Blank</span>
+      </div>
+    </form>
+    
+        <!-- Abbreviation -->
+    <p>Please enter your state abbreviation</p>
+    <form action="" id="form5">
+      <div>
+              <input onKeyUp="validateStateId(this.value,'id1');" size="2"  />
+              <span class='id1' style="color:red">Invalid state abbreviation Ex. ID for Idaho</span>
+      </div>
+    </form>
+
+    <!-- Age -->
+    <p>Please enter your zip code</p>
+    <form action="" id="form1">
+ 	  <div>
+            <input onInput="validateZip(this.value,'zip1');" size="3"/>
+            <span class='zip1' style='color:red'>Must be 6 Numbers</span>
+      </div>
+    </form>
+    
+    <!-- SSN -->
+    <p>Please enter Phone Number</p>
+    <form action="" id="form2">
+        <div>
+             <input onInput="validatePN(this.value,'PN1');" size="11"/>
+             <span class='PN1' style="color:red">Invalid Format ex. 000-000-0000</span>
+        </div>
+    </form>
+    
+    <div Id="Form">
+
+    <p>Please choose your card<br> Default Vesa<p>
+      <form action"" id="card">
+        <select NAME="card" onChange="calcPrice()" id="card">
+       <option value="1">Visa</option>
+       <option value="2">MasterCard</option>
+       <option value="3">American Express</option>
+      </select>
+      </form>
+
+    <!-- Credit Card Number -->
+    <p>Please enter your credit card number Ex. 0000 0000 0000 0000</p>
+    <form action="" id="form3">
+      <div>
+      		 <input onInput="validateCC(this.value,'CC1');" size="19" />
+           <span class='CC1' style="color:red">Invalid credit card number</span>
+      </div>
+    </form>
+    
+    <!-- Date -->
+    <p>Please enter your credit card experation date: m/yyyy</p>
+    <form action="" id="form4">
+      <div>
+             <input onInput="validateDate(this.value,'date1');" size="9" />
+             <span class='date1' style="color:red">date must be after 9/2017, before 9/2020 3 year expiration. form must be m/yyyy</span>
+      </div>
+    </form>
+    </div>
+    <!-- submit or reset  -->
+    <p>Submit or reset</p>
+    <div class="finalAction">
+    <form id=sub action="index07.html" onsubmit="myFunction()">
+ <input id=su type="submit" value="Submit">
+</form>
+      <form id=res action="Week07.html" onreset="myFunction2()">
+ <input id=re type="reset" value="Reset">
+</form>
+</div>
+</div>
+  </body>
+</html>

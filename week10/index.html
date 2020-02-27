@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- I couldn't figure out the drop down element, and no one it the help center knew how to help  so I just did more buttons, I hope this is ok.-->
+	<title>Population</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="index.css"> 
+      <style type="text/css">
+	     select {
+	 	    position: absolute; left: 120px;
+	     }
+	     div#move {
+	     	margin-left: 20px;
+	     }
+	     div#move > div {
+	     	margin-left: 25px;
+	     	font-size: 19px;
+	     	font-weight: 5px;
+	     }
+	     h2 {
+	     	position: relative; right: 300px;
+	     }
+	     * {
+   			 box-sizing: border-box;
+		}
+
+		body {
+  			 margin: 0;
+		}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+	  </style>
+</head>
+<body>
+	<ul class="nav">
+        <li><a href="index07.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Week07.html">Shopping and Cart</a></li>
+        <li><a href="../index.html">Return to CS</a></li>
+      </ul>
+<h1>Population</h1>
+
+
+<div id= "move">
+  <div class="row">
+    <div class="column" >
+  	<h3>Click button to display city and population </h3> 
+    <button id="btn1">USA</button>
+		  <div id="popu1"></div>
+		   <p></p>
+		<button id="btn2">Canada</button>
+		  <div id="popu2"></div>
+		  <p></p>
+		<button id="btn3">Russia</button>
+		  <div id="popu3"></div>
+		   <p></p>
+		<button id="btn4">Mexico</button>
+		  <div id="popu4"></div>
+
+    </div>
+  	 <div class="column">
+  		<h3>Enter json file and click button </h3> 
+    	Enter file Name: <input type="text" id="file" value="Search"><br>
+			<button id="btn5">Get Info</button>
+			<p>Only valid enries!!
+			<br>json.txt<br>json1.txt</p>
+		<div id="popu5"></div>
+ 	 </div>
+   </div>	
+</div>
+	<script type="text/JavaScript" src="week10.js"></script>
+</body>
+</html>

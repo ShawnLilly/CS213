@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   	<meta charset="utf-a">
+	<title>NAVEBAR</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+   </head>
+   <body>
+   		<ul class="nav">
+    		<li><a href="a">Home</a></li>
+    		<li><a href="a">About</a></li>
+    		<li><a href="a">Services</a></li>
+    		<li><a href="a">work</a></li>
+    		<li><a href="a">contaact</a></li>
+   </body>
+</html>
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet version="1.0"
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/">
+<html>
+<body>
+<h1>Ponder09 B.S.A.</h1>
+<table border="1">
+<tr bgcolor="#ffc0cb">
+<th style="text-align:center">Troop</th>
+<th style="text-align:center">Name</th>
+<th style="text-align:center">Rank and date earned</th>
+<th style="text-align:center">Meritbadge and date earned</th>
+<th style="text-align:center">Address</th>
+<th style="text-align:center">Phone</th>
+
+</tr>
+
+<xsl:for-each select="bsa/council/troop">
+<tr>
+<td><xsl:value-of select="@troopNumber" /><xsl:value-of select="@unitName" /></td>
+<td><xsl:value-of select="scout/firstName" /><xsl:value-of select="concat(' ',scout/lastName)" /></td>
+<td><xsl:value-of select="concat(' ',scout/rank)" /><xsl:value-of select="concat(' ',scout/rank/@dateEarned)" /></td>
+<td><xsl:value-of select="scout/meritbadge" /><xsl:value-of select="concat(' ',rank/@dateEarned)" /></td>
+<td><xsl:value-of select="scout/address" /></td>
+<td><xsl:value-of select="scout/phone" /></td>
+</tr>
+</xsl:for-each>
+
+</table>
+</body>
+</html>
+</xsl:template>
+</xsl:stylesheet>

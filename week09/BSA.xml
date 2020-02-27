@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="BSA.xsl" ?>
+<!DOCTYPE bsa SYSTEM "BSA.dtd">
+<bsa>
+<!-- firat council -->
+<council name='Grand Teton Council'>
+<!-- c1 first troop -->
+<troop troopNumber='107' unitName='Tigers'>
+      <!-- t1 first scout -->
+<scout>
+<firstName>Joe</firstName>
+<lastName> Smith</lastName>
+  <address> 
+    <street>Made up street</street>
+    <city>Idaho Falls</city>
+    <state>Idaho</state>
+  </address>
+<phone>(208) 359 7751</phone>
+<rank dateEarned='5/2/2016' name='Tenderfoot'></rank>
+<rank dateEarned='11/2/2017' name='2ndClass'></rank>
+<meritbadge dateEarned='11/5/2017' name='First Aid'></meritbadge>
+<meritbadge dateEarned='11/2/2017' name='Environmental Science'></meritbadge>
+</scout>
+      <!-- t1 second scout -->
+<scout>
+<firstName>Dave</firstName>
+<lastName> Smith</lastName>
+  <address> 
+    <street>Made up street</street>
+    <city>Idaho Falls</city>
+    <state>Idaho</state>
+  </address>
+<phone>(208) 359 7751</phone>
+<rank dateEarned='3/2/2015' name='Tenderfoot'></rank>
+<rank dateEarned='12/2/2016' name='2ndClass'></rank>
+<meritbadge dateEarned='11/5/2017' name='Life Saving'></meritbadge>
+<meritbadge dateEarned='11/2/2017' name='Environmental Science'></meritbadge>
+</scout>
+</troop>
+
+<!-- c1 troop 2 -->
+<troop troopNumber='106' unitName='Bear'>
+      <!-- t2 first scout -->
+<scout>
+<firstName>Tyler</firstName>
+<lastName> Walker</lastName>
+  <address> 
+    <street>Made up street</street>
+    <city>Idaho Falls</city>
+    <state>Idaho</state>
+  </address>
+<phone>(208) 359 7751</phone>
+<rank dateEarned='5/2/2016' name='Tenderfoot'></rank>
+<rank dateEarned='11/2/2017' name='2ndClass'></rank>
+<meritbadge dateEarned='11/5/2017' name='First Aid'></meritbadge>
+<meritbadge dateEarned='11/2/2017' name='Environmental Science'></meritbadge>
+</scout>
+      <!-- t2 second scout -->
+<scout>
+<firstName>Bill</firstName>
+<lastName> Davidson</lastName>
+  <address> 
+    <street>Made up street</street>
+    <city>Idaho Falls</city>
+    <state>Idaho</state>
+  </address>
+<phone>(208) 501 2342</phone>
+<rank dateEarned='5/2/2016' name='Tenderfoot'></rank>
+<rank dateEarned='11/2/2017' name='2ndClass'></rank>
+<meritbadge dateEarned='11/5/2017' name='First Aid'></meritbadge>
+<meritbadge dateEarned='11/2/2017' name='Environmental Science'></meritbadge>
+</scout>
+</troop>
+</council>
+
+<!-- Second council -->
+<council name='	Ore-Ida Council'>
+<!-- c2 first troop -->
+<troop troopNumber='109' unitName='Bear'>
+      <!-- t3 first scout -->
+<scout>
+<firstName>Matt</firstName>
+<lastName> Jensen</lastName>
+  <address> 
+    <street>Down Town</street>
+    <city>Boise</city>
+    <state>Idaho</state>
+  </address>
+<phone>(208) 297 1521</phone>
+<rank dateEarned='6/2/2016' name='Tenderfoot'></rank>
+<rank dateEarned='5/7/2017' name='2ndClass'></rank>
+<meritbadge dateEarned='2/7/2017' name='Swimming'></meritbadge>
+<meritbadge dateEarned='9/2/2017' name='Environmental Science'></meritbadge>
+</scout>
+      <!-- t3 second scout -->
+<scout>
+<firstName>John</firstName>
+<lastName> Parker</lastName>
+  <address> 
+    <street>Down Town</street>
+    <city>Boise</city>
+    <state>Idaho</state>
+  </address>
+<phone>(208) 149 5326</phone>
+<rank dateEarned='7/2/2015' name='Star'></rank>
+<rank dateEarned='8/2/2016' name='2ndClass'></rank>
+<meritbadge dateEarned='7/5/2017' name='Swimming'></meritbadge>
+<meritbadge dateEarned='10/2/2017' name='Environmental Science'></meritbadge>
+</scout>
+</troop>
+
+<!-- c2 troop 2  -->
+<troop troopNumber='105' unitName='Tigers'>
+      <!-- t4 first scout -->
+<scout>
+<firstName>William</firstName>
+<lastName> Walker</lastName>
+  <address> 
+    <street>Dantone </street>
+    <city>Boise</city>
+    <state>Idaho</state>
+  </address>
+<phone>(208) 359 7751</phone>
+<rank dateEarned='5/2/2016' name='Tenderfoot'></rank>
+<rank dateEarned='11/2/2017' name='2ndClass'></rank>
+<meritbadge dateEarned='11/5/2017' name='First Aid'></meritbadge>
+<meritbadge dateEarned='11/2/2017' name='Environmental Science'></meritbadge>
+</scout>
+      <!-- t4 second scout -->
+<scout>
+<firstName>Bill</firstName>
+<lastName> Smith</lastName>
+  <address> 
+    <street>Dantone</street>
+    <city>Boise</city>
+    <state>Idaho</state>
+  </address>
+<phone>(208) 124 5125</phone>
+<rank dateEarned='5/10/2016' name='Tenderfoot'></rank>
+<rank dateEarned='1/2/2017' name='2ndClass'></rank>
+<meritbadge dateEarned='6/25/2017' name='First Aid'></meritbadge>
+<meritbadge dateEarned='5/3/2017' name='Environmental Science'></meritbadge>
+</scout>
+</troop>
+</council>
+</bsa>

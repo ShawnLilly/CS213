@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+
+<html>
+
+
+
+	<head>
+
+
+
+		<style> /* #0 */
+
+			
+
+			body { 
+
+				font-size:16px;
+
+				font-family: "Verdana", Verdana, Sans-serif; 
+
+				background-image: url("html.jpg"); 
+
+				color: white; 
+
+			}
+
+
+
+	      h1 { 
+
+	      	color: lawngreen;
+
+	         text-align: center;
+
+	         font-style: italic;
+
+	      }
+
+	      
+
+	      h3 { 
+
+	      	color: lawngreen; 
+
+	         text-align: center;
+
+	         font-style: italic;
+
+	      }      
+
+	      
+
+	      p {
+
+	         font-size: 20px;
+
+	         border: 5px solid black;
+
+	         padding: 10px;
+
+	         width: 650px;
+
+	         height: 120px;        
+
+	         text-align: justify;
+
+	         text-align: center;
+
+	         color: lightblue;
+
+	         display:table; margin:0 auto;
+
+	      }
+
+	      
+
+	      a { color: green; }    
+
+	      
+
+	      ul { 
+
+	      	text-align: center;
+
+	         font-size: 15px;
+
+	         font-weight: 20px;
+
+	         color: green;
+
+	         display:table; margin:0 auto;
+
+	      }
+
+
+
+		</style>
+
+
+
+	   <style> /* #1 */
+
+	      body { 
+
+	      	font-size:16px;
+
+	         font-family: "Courier New", Courier New, Monospace; 
+
+	         background-color: black; 
+
+	         color: white; 
+
+	      }
+
+
+
+	      h1 { 
+
+	         color: blue;
+
+	         text-align: right;
+
+	         text-decoration: overline;
+
+	         font-size: 10;
+
+	      }
+
+
+
+	      div#title { 
+
+	      	font-size: 40px; 
+
+	         text-align: left;
+
+	      }
+
+
+
+	      div#text { 
+
+	      	font-size: 10px; 
+
+	      }
+
+
+
+	      h3 { 
+
+	      	color: blue; 
+
+	         text-align: right;
+
+	         text-decoration: underline;
+
+	         font-size: 10;
+
+	      }
+
+
+
+	      p {
+
+	         font-size: 10px;    
+
+	         text-align: right;
+
+	         color: lightblue;
+
+	         
+
+	      }
+
+
+
+	      a { color: blue; }    
+
+	      
+
+	      ul { 
+
+	      	text-align: right;
+
+	         font-size: 10px;
+
+	         font-weight: 30px;
+
+	         color: blue;
+
+	         list-style-type: square; 
+
+	         background: #3399ff;
+
+	         padding: 10px;
+
+	      }
+
+
+
+		</style>
+
+
+
+	   <style> /* #2 */
+
+
+
+		   body { 
+
+		   	background-color: #0BB6C1;
+
+		   	font-size:16px; 
+
+	   	}
+
+
+
+		   #title h1 {
+
+				font: 150px 'brush script mt', script;
+
+	  			text-align: center;
+
+				animation: colorchange 5s infinite;
+
+		   }	   			
+
+		
+
+		   @keyframes colorchange {
+
+				from {color: #C10B5B;}
+
+				to {color: #0BB6C1;}
+
+		   }
+
+
+
+	   	#title {
+
+	   		border-style: dashed;
+
+	   		background-color: #ECE7C9;
+
+	   		text-align: center;
+
+			}
+
+
+
+	   	#title p {
+
+	   		font: 25px 'copperplate', fantasy;
+
+	   		color: #A25DF5;
+
+			}
+
+
+
+	   	ul {
+
+	   		list-style-type: lower-roman;
+
+	   		font-weight: bold;
+
+	   		font-size: 2em;
+
+	   		float: left;
+
+	   		width: 15%;
+
+	   		padding: 20px;
+
+	   		margin-left:40px;
+
+			}
+
+		
+
+			#text {
+
+				border-style: dotted;
+
+				float: right;
+
+				width: 75%;
+
+				padding: 20px;
+
+				background-color: #ECE7C9;
+
+				color: #C10B5B;
+
+				text-align: left;
+
+				margin-top: 20px;
+
+			}
+
+
+
+			a {
+
+				font-family: 'copperplate';
+
+			}
+
+
+
+			#sidebar {
+
+				clear: both;
+
+				float: right;
+
+				margin-top: 20px;
+
+				text-align: center;
+
+				font-weight: bold;
+
+				font-size: 20px;
+
+				padding: 30px;
+
+				color: #ECE7C9;
+
+				text-align: left;
+
+				width: 75%;
+
+			}
+
+			
+
+			h3 {
+
+				font: 30px 'copperplate', fantasy;
+
+				text-align: center;
+
+			}   
+
+
+
+		</style>
+
+
+
+	   <style> /* #3 */
+
+
+
+		   body { 
+
+		   	font-size: 30px; 
+
+		   	background-color: #9785A2;
+
+		   	color: #ccccff; 
+
+			}
+
+
+
+	   	#title h1 {
+
+	   		position: relative;
+
+	   		left: 0;
+
+		   	font: 130px 'comic sans ms', mono;
+
+		   	animation: movement 5s infinite;
+
+		   	color: white;
+
+		   	text-align: center;
+
+	   	}
+
+
+
+			#title p {
+
+	   		font-style: italic;
+
+	   		color: #4d0000;
+
+	   		font-size: 40px;
+
+	   		font-weight: bold;
+
+	   		text-align: center;
+
+	   		font-family: 'lucida sans typewriter', serif;
+
+	   	}	   		
+
+
+
+		   @keyframes movement {
+
+	   		50% {left: 500px;}
+
+	   	}
+
+
+
+	   	h1, h3 {
+
+	   		background-color: #859FA2;
+
+	   		width: 75%;
+
+	   		font-family: 'courier', mono;
+
+	   	}
+
+
+
+	   	#text h1 {
+
+	   		animation: fontsize 5s infinite;
+
+	   		color: white;
+
+		   }
+
+
+
+	   	@keyframes fontsize {
+
+	   		50% {font-size: 40px;}
+
+	   	}
+
+		   
+
+	   	h3 {
+
+	   		font-variant: small-caps;
+
+	   		color: white;
+
+	   	}
+
+
+
+	   	ul {
+
+	   		letter-spacing: 10px;
+
+	   		font-weight: bold;
+
+	   		text-align: right;
+
+	   		list-style:none;
+
+	   		color: #ccf5ff;
+
+	   	}
+
+
+
+	   	#text p {
+
+	   		border: 2px dashed white;
+
+	   		outline-style: solid;
+
+	   		outline-color: #5AECE3;
+
+	   		font-family: 'lucida bright', serif;
+
+	   	}
+
+
+
+	   	#sidebar p {
+
+	   		font-family: 'comic sans ms';
+
+	   		font-size: 30px;
+
+	   		color: #99e699;
+
+	   		border: solid;
+
+	   		animation: border 5s infinite;
+
+	   	}
+
+
+
+	   	@keyframes border {
+
+	   		50% {border: 15px solid lightblue;}
+
+	   	}
+
+
+
+	   	a {
+
+	   		font-family: 'papyrus';
+
+	   		color: white;
+
+	   		font-size: 25px;
+
+	   		text-decoration: none;
+
+	   	}
+
+		   
+
+		</style>
+
+
+
+      <style> /* #4 */
+
+
+
+         body {
+
+         	font-family: "Comic Sans MS", cursive, sans-serif;
+
+			margin: 20px 320px 20px 320px;
+
+            background-color: #66ccff;
+
+            text-align: left; 
+
+            font-size: 25px;
+
+         }
+
+
+
+         h1 {
+
+         	text-shadow: 2px 2px #ff66cc;
+
+         	transition: letter-spacing 1s;
+
+         	letter-spacing: 2px;
+
+         	border-style: dashed;
+
+         	text-align: center; 
+
+         }
+
+
+
+         h1:hover {
+
+         	letter-spacing: 15px;
+
+         }
+
+
+
+         p {
+
+         	transition: color 1s;
+
+         	color: black;
+
+         }
+
+
+
+         p:hover {
+
+         	color: #993399;
+
+         }
+
+
+
+         ul {
+
+         	transition: letter-spacing 1s;
+
+         	letter-spacing: 2px;
+
+         }
+
+
+
+         ul:hover {
+
+         	letter-spacing: 30px;
+
+         }
+
+
+
+      </style>
+
+	    
+
+	   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+
+	   <title>Week 03 : CSS</title>
+
+
+
+   </head>
+
+
+
+   <body>
+
+
+
+      <div class="document">
+
+
+
+         <div id="title">
+
+         	<h1>Week 03 : CSS</h1>
+
+          	<p>This page will demonstrate how to switch between different CSS stylesheets to achieve a given effect</p>
+
+         </div> <!--title -->
+
+
+
+         <div class="content">
+
+
+
+	         <div id="menuBar">
+
+	            <ul id="menuBarList">
+
+	               <li class="menuBarItem" onclick="applyStyle(0)">Stylesheet 1</li>
+
+	               <li class="menuBarItem" onclick="applyStyle(1)">Stylesheet 2</li>
+
+	               <li class="menuBarItem" onclick="applyStyle(2)">Stylesheet 3</li>
+
+	               <li class="menuBarItem" onclick="applyStyle(3)">Stylesheet 4</li>
+
+	               <li class="menuBarItem" onclick="applyStyle(4)">Stylesheet 5</li>
+
+	               <li class="menuBarItem" onclick="disableStyles()">No Stylesheet</li>
+
+	            </ul>
+
+	         </div> <!-- menuBar -->
+
+
+
+	         <div id="text">
+
+	            
+
+	            <h1>Select the Stylesheet</h1>
+
+	            
+
+	            <p>
+
+
+
+	            	There are five stylesheets that you may select from. Each one will change the coloring, fonts, 
+
+	            	and even the layout of the page.You can change the layout of this page by selecting different 
+
+	               stylesheets in the menu, or by selecting one of the following links:<br>
+
+
+
+	               <a href="#" onclick="applyStyle(0)">Stylesheet 1</a>,
+
+	               <a href="#" onclick="applyStyle(1)">Stylesheet 2</a>,
+
+	               <a href="#" onclick="applyStyle(2)">Stylesheet 3</a>,
+
+	               <a href="#" onclick="applyStyle(3)">Stylesheet 4</a>,
+
+	               <a href="#" onclick="applyStyle(4)">Stylesheet 5</a>.
+
+	            
+
+	            </p>
+
+
+
+	            <h1>Instructions</h1>
+
+	            
+
+	            <p>
+
+	              <!--Please modify this page to include a description of each stylesheet, including anything clever that 
+
+	            		you did to achieve a given effect. Please also include the contributors to a given stylesheet. -->
+
+
+
+	               <strong>Stylesheet 1:</strong> Changes the colors of text, adds a background image, and makes the page dynamically center with a resizing of the page. It also puts all the paragraphs in text boxes. <br>
+
+
+
+	               <strong>Stylesheet 2:</strong> Changes the color, style, placement, and size of text. It makes the background black. It also adds a line over the text, and it adds a colored block to the list. <br>
+
+
+
+	               <strong>Stylesheet 3:</strong> Changes the color of the background and text.  The title has an animation that causes the color to change on an infinite loop.  There are 2 different types of borders included, both different colors.  The Style Sheet menu is floating to the left, and the instructions are floating left.  The Grading Sidebar clears both of these elements.<br>
+
+
+
+	               <strong>Stylesheet 4:</strong> This stylesheet is all about animation.  The title heading moves across the screen, while the other h1 headings change font-size.  The border for the grading section also resizes on it's own.  There are many different font colors, weights, and families.  h3 has a variant of small-caps.  The two text paragraphs have a double border, and the links have the underline removed.<br>
+
+
+
+	               <strong>Stylesheet 5:</strong> The use of hover is on full display in this stylesheet.  Hovering over paragraphs, headings, or the bulleted list will yield interesting results and transitions are used to make it all look seamless.  Also, text shadows are used on headings.<br>
+
+
+
+	            </p>
+
+
+
+	         </div> <!-- text -->
+
+
+
+	         <div id="sidebar">
+
+	            <h3>Grading</h3>
+
+
+
+	            <p>
+
+	            	<!--In order to get full credit for this assignment, you will need to demonstrate what you have learned 
+
+	         		and how you helped your classmates. This means your contribution needs to be briefly described 
+
+	               on the page.-->
+
+
+
+	                    <strong>Shawn Lilly:</strong> I learned how useful CSS can be. If I had done this without it, the difference in the amount of code would have been crazy. I contributed by posting to the discussion bored, preparing the main page and I also did Stylesheets 1 and 2.<br>
+
+	                    <strong>Jessica Ingebrigtsen:</strong> I was able to learn a lot about CSS that I hadn't previously known.  There are so many things that can be changed, just through the style sheets.  Changing these elements brings a completely different feel to a webpage.  I contributed to the discussion board, by posting 5 properties of CSS and how to use them, and I also did Stylesheets 3 & 4.<br>
+
+	                    <strong>Brock Peterson:</strong>  Honestly, the more I learn about CSS, the more questions I have than answers.  However, this also means I'm getting a better feel for how CSS
+
+	                    operates.  It's interesting what effects can be acheived with only a few lines of code.  Anyways, I posted five threads to the discussion board detailing a myriad of different effects that can be acheived with CSS.  Furthermore, as the copy-editor, I swept through the code and made a myriad of adjustments to make it more readable.  Lastly, I did stylesheet 5.
+
+	                    <br>
+
+	            
+
+	            </p>
+
+	         </div> <!--sidebar -->
+
+
+
+         </div> <!-- content -->
+
+
+
+      <!-- <div id="bottom">Submit this assignment by </div> -->
+
+
+
+      </div> <!-- document -->
+
+      
+
+      <script>
+
+	   
+
+		   <!-- DISABLE STYLES: This function turns off the four stylesheets -->
+
+
+
+		   function disableStyles() {
+
+				document.styleSheets[0].disabled = true;
+
+				document.styleSheets[1].disabled = true;
+
+				document.styleSheets[2].disabled = true;
+
+				document.styleSheets[3].disabled = true;
+
+				document.styleSheets[4].disabled = true;
+
+			}
+
+
+
+			<!-- APPLY STYLES: This function turns off all four stylesheets, then turns one back on -->
+
+
+
+			function applyStyle(i) {
+
+				disableStyles();
+
+				document.styleSheets[i].disabled = false;
+
+			}
+
+
+
+	   </script>
+
+   
+
+	</body>
+
+
+
+</html>

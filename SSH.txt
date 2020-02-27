@@ -1,0 +1,6 @@
+plink -ssh -L 80:157.201.194.254:80 -P 215 -l slilly2 -N 157.201.194.202
+
+ssh -p 215 slilly2@157.201.194.207
+
+https://goo.gl/ascMPJ
+
