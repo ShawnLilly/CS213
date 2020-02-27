@@ -1,0 +1,54 @@
+  body { 
+	  font-size:16px;
+    font-family: "Verdana", Verdana, Sans-serif; 
+    background-image: url("fbgs.jpg"); 
+    color: white; 
+  } 
+  h1 { 
+    font-size:40px;
+  	color: white;
+    text-align: center;
+    font-style: italic;
+    background-color: rgba(66, 134, 244,.4);
+  }
+  h2 { 
+  	color: white;
+    text-align: center;
+    
+  }
+  h4 {
+  	font-size: 25px;
+  	font-family: "Times New Roman", Times, serif;
+  }
+  p { 
+   	font-size: 20px;      
+    text-align: justify;
+    color: lightblue;
+    display:table;
+  }
+  a {
+  	color:yellow;
+    
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  div.heading {
+    margin-top: 40px;
+  }
+  div.document{
+    margin-top:20px;
+    margin-bottom: 20px;
+  }
+  div#links {
+    margin-top: 20px;
+  }
+  div.para {
+    margin: 10px;
+  }
+    div.search {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+    padding: 10px 20px 12px 30px;
+    text-align: left;
+}
+
