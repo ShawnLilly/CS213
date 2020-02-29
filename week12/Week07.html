@@ -1,0 +1,259 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <link rel="stylesheet" type="text/css" href="index.css"> 
+    <title>Products</title>
+    <script type="text/javascript" src="Week07.js"></script>
+    <style type="text/css">
+    input#su {
+   	  background-color: #C0C0C0; /* silver */
+   	  border: none;
+      color: Black;
+      padding: 3px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin: 4px 2px;
+      cursor: pointer;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 3px 15px 0 rgba(0,0,0,0.19);
+    }
+    input#re {
+   	  background-color: #C0C0C0; /* silver */
+   	  border: none;
+      color: Black;
+      padding: 3px 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin: 4px 2px;
+      cursor: pointer;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 3px 15px 0 rgba(0,0,0,0.19);
+    }
+    #form, pre {
+	  margin-left:20px; 
+	  font-family:Verdana, Geneva, sans-serif; 
+      padding:6px;
+      width: 550px;
+      font-size: 12;
+      border: 3px solid rgb(0, 90, 136); 
+      border-radius: 4px;
+	}
+    h2 {
+	  border-bottom-style: solid;
+	}
+    div.product {
+      background-color: rgba(136, 176, 239,.3);
+      font-size: 18px;
+      border: 3px solid black;
+      width: 850px;     
+      color: gold;
+      display:table; margin:0 auto;  
+    }
+    h3 {
+      color: white;
+    }
+    .finalAction {
+      display: inline-block;
+    }
+    #Form {
+      margin-top: 10px;
+      padding:6px;
+      padding-top: 0px;
+      width: 530px;
+      font-size: 12;
+      border-radius: 2px;
+      border: 2px solid rgb(17, 114, 163);
+    }
+    div#move {
+      margin-left: 25px;
+    }
+    div#move2 {
+      margin-left: 6px;
+    }
+    div#buy {
+      width: 350px;
+      border-radius: 2px;
+      border: 2px solid rgb(17, 114, 163);
+      padding-top: 20px;
+      padding-bottom: -50px;
+    }
+    input#PicExtPrice{
+      background-color: transparent;
+      border:none;
+      color:white;
+      font-size: 17px;
+    }
+    select {
+      border: none;
+      border-radius: 4px;
+      background-color: #C0C0C0;
+    }
+	</style>
+  </head>
+  
+<body onload="infoFunction()">
+      <ul class="nav">
+        <li><a href="index07.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="Week07.html">Shopping and Cart</a></li>
+        <li><a href="../index.html">Return to CS</a></li>
+      </ul>
+  <div class="first">
+  <p>These are our flag ship items. Currently we only have three, but don’t worry.
+   We will soon be adding a lot more.</p>
+  </div>
+
+
+
+  <div class="product">
+  <table>
+    <tr>
+      <td><img src="Ecar.jpg" alt="Bolt" width="350" height="170"></td>
+  <td><h3>Bolt</h3><p><br>Cost: $45,000 <br> Description <br> High end electric car, up to 500 miles per charge. Maximum time between charges before battery only drops 10% every 30 days. Self-driving, ecofriendly.</p></td>
+    </tr>
+  </table>
+  </div>
+
+  <div class="product">
+    <table>
+    <tr>
+      <td> <img src="Nb.jpg" alt="P23 Ingection Nanobots" width="350" height="170"></td>
+  <td><h3>P23 Injection Nanobots</h3><p><br>Cost: $3,000 <br> Description <br> Injectable Nanobots that will repair your body. One injection every ten years for best results. Fixes aches and pains, scars, tissue damage, removal of cancer cells, and so much more.</p></td>
+    </tr>
+    </table>
+  </div>
+  <div class="product">
+    <table>
+    <tr> 
+  <td><img src="Sp.jpg" alt="High Power Solar Pannels" width="350" height="170"></td>
+  <td><h3>High Power Solar Panels</h3><p><br>Cost: $22,000 <br> Description <br>High energy output solar panels. One solar panel puts out enough energy to power the average size home. Great for the environment, and your electric bill.</p></td>
+    </tr>
+    </table>
+  </div>
+  <div id="move">
+    
+
+
+    <h3><p>Fill out the form below to buy your items.</p></h3>
+  
+
+
+
+  </div>
+  <div id="form">
+       <p></p>
+       <div id="buy">
+        <div id="move2">
+
+        <!-- picking items to buy -->
+   <form Name="form1" action="form.php" onsubmit="return CheckFunction('name1','name2','addr1','id1','zip1','PN1','CC1','date1')" onreset="myFunction2()" method="post">
+    <select name="saleItem1" onChange="calcPrice()" id="saleItem1">
+       <option value="0">Select One </option>
+       <option value="40000">Bolt: $40000</option>
+       <option value="3000">P23 Ingection Nanobots: $3000</option>
+       <option value="20000">High Power Solar Panels: $20000</option>
+    </select>
+
+    <select name="saleItem2" onChange="calcPrice()" id="saleItem2">
+        <option value="0">Select One </option>
+       <option value="40000">Bolt: $40000</option>
+       <option value="3000">P23 Ingection Nanobots: $3000</option>
+       <option value="20000">High Power Solar Panels: $20000</option>
+    </select>
+
+    <select name="saleItem3" onChange="calcPrice()" id="saleItem3">
+       <option value="0">Select One </option>
+       <option value="40000">Bolt: $40000</option>
+       <option value="3000">P23 Ingection Nanobots: $3000</option>
+       <option value="20000">High Power Solar Panels: $20000</option>
+    </select>
+      <p>The new calculated price: $<input name="total" type="text" id="PicExtPrice" Size=3/></p>  
+        </div>
+       </div>
+    <p></p>
+
+
+      
+       <!-- FName -->
+    <p>Please indicate your first Name</p>
+    <div>
+            <input name="fName" onInput="validateName(this.value,'name1');" size="4"/>
+            <span class='name1' style='color:red'>Blank</span>
+      </div>
+
+
+      <!-- LName -->
+    <p>Please indicate your Last Name</p>
+
+    <div>
+            <input name="lName" onInput="validateName(this.value,'name2');" size="4"/>
+            <span class='name2' style='color:red'>Blank</span>
+      </div>
+
+      <!-- Address -->
+    <p>Please enter your Address</p>
+      <div>
+              <input name="address" onInput="validateName(this.value,'addr1');" size="15"  />
+              <span class='addr1' style="color:red">Don't input state or zip</span>
+      </div>
+    
+        <!-- Abbreviation -->
+    <p>Please enter your state abbreviation</p>
+      <div>
+              <input name="state" onKeyUp="validateStateId(this.value,'id1');" size="2"  />
+              <span class='id1' style="color:red">Invalid state abbreviation Ex. ID for Idaho</span>
+      </div>
+
+    <!-- Age -->
+    <p>Please enter your zip code</p>
+ 	  <div>
+            <input name="zip" onInput="validateZip(this.value,'zip1');" size="3"/>
+            <span class='zip1' style='color:red'>Must be 6 Numbers</span>
+      </div>
+    
+    <!-- SSN -->
+    <p>Please enter Phone Number</p>
+        <div>
+             <input name="phone" onInput="validatePN(this.value,'PN1');" size="11"/>
+             <span class='PN1' style="color:red">Invalid Format ex. 000-000-0000</span>
+        </div>   
+
+    <div Id="Form">
+      <p>Please choose your card<br> -Default Vesa<p>
+     <select NAME="card" onChange="calcPrice()" id="card">
+       <option value="Visa">Visa</option>
+       <option value="MasterCard">MasterCard</option>
+       <option value="American Express">American Express</option>
+      </select>
+
+    <!-- Credit Card Number -->
+    <p>Please enter your credit card number Ex. 0000 0000 0000 0000</p>
+      <div>
+      		 <input name="cardNum" onInput="validateCC(this.value,'CC1');" size="19" />
+           <span class='CC1' style="color:red">Invalid credit card number</span>
+      </div>
+    
+    <!-- Date -->
+    <p>Please enter your credit card experation date: m/yyyy</p>
+      <div>
+             <input name="cardDate" onInput="validateDate(this.value,'date1');" size="9" />
+             <span class='date1' style="color:red">Date must be of year 2017 to 2020. Form must be m/yyyy</span>
+      </div>
+    </div> <!-- Form -->
+
+    <!-- submit or reset  -->
+    <p>Click to Submit or reset</p>
+    <div class="finalAction">
+ <input id=su type="submit" value="Submit">
+ <input id=re type="reset" value="Reset">
+</form>
+</div>
+</div>
+  </body>
+</html>
